@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Amazon Registration</title>
+	<link rel="icon" type="image/x-icon" href="images/favicon.ico">
+	<link rel="short icon" type="image/x-o=icon" href="images/favicon.ico">
+	<link rel="stylesheet" type="text/css" href="styles/register.css">
+</head>
+<body>
+	<div id="logo"><a href=""></a></div>
+	<form method="post" >
+		<div class="account">
+			<div class="title">Create account</div>
+			<div class="section">
+				<label for="name">Your name</label>
+				<input type="text" name="name" id="name" autofocus="autofocus" class="normal">
+				<div class="errorInfo showWhenVoid">
+					<i></i>
+					<span>Enter your name</span>
+				</div>
+			</div>
+			<div class="section">
+				<label for="email">Email</label>
+				<input type="text" name="email" id="email" class="normal">
+				<div class="errorInfo showWhenVoid">
+					<i></i>
+					<span>Enter your email</span>
+				</div>
+				<div class="errorInfo showWhenWrongFormat">
+					<i></i>
+					<span>Enter a valid email address</span>
+				</div>
+				<div class="errorInfo">
+					<i></i>
+					<span>Wrong or Invail email address or mobile phone number. Please correct and try again.</span>
+				</div>
+				<div class="errorInfo">
+					<i></i>
+					<span>Enter your mobile phone number</span>
+				</div>
+			</div>
+			<div class="section">
+				<label for="password">Password</label>
+				<input type="password" name="password" id="password" placeholder='At least 6 characters' class="normal">
+				<div id="info">
+					<i></i>
+					<div>Passwords must be at least 6 characters.</div>
+				</div>
+				<div class="errorInfo showWhenVoid">
+					<i></i>
+					<span>Enter your password</span>
+				</div>
+				<div class="errorInfo showWhenWrongFormat">
+					<i></i>
+					<span>Passwords must be at least 6 characters.</span>
+				</div>
+			</div>
+			<div class="section">
+				<label for="reenterPassword">Re-enter password</label>
+				<input type="password" id="reenterPassword" name="reenterPassword" class="normal">
+				<div class="errorInfo showWhenVoid">
+					<i></i>
+					<span>Type your password again</span>
+				</div>
+				<div class="errorInfo showWhenWrongFormat">
+					<i></i>
+					<span>Passwords must match</span>
+				</div>
+			</div>
+			<button type="submit">Create your Amazon account</button> 
+			<div class="text">By creating an account, you agree to Amazon's <a href="">Conditions of Use</a> and <a href="">Privacy Notice</a></div>
+			<div class="signIn">
+				<div class="divider"></div>
+				<div>Already have an account? <a href="signIn.html">Sign-In </a></div>
+			</div>
+		</div>	
+	</form>
+	<div id="footer">
+		<div class="divider"></div>
+		<div class="info"><span class="spacer"></span><a href="">Condition of Use</a><span class="spacer"></span><a href="">Privacy Notice</a><span class="spacer"></span><a href="">Help</a><span class="spacer"></span></div>
+		<div class="copyright">© 1996-2019, Amazon.com, Inc. or its affiliates </div>
+	</div>
+	<script type="text/javascript" src="javascripts/public.js"></script>
+	<script type="text/javascript" src="javascripts/register.js"></script>
+</body>
+</html>

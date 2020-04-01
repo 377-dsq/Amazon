@@ -1,0 +1,267 @@
+body{
+	font-size: 13px;
+	line-height: 19px;
+	color: #111;
+	padding: 14px 18px;
+	margin: 0;
+	margin-bottom: 22px;
+	background: #fff;
+}
+#logo{
+	width: 100%;
+	margin-bottom: 18px;
+}
+#logo a{
+	display: block;
+	width: 103px;
+	height: 31px;
+	margin: 0 auto;
+	background: url(../images/ui.png) -5px -130px;
+}
+form{
+	width: 350px;
+	margin: auto;
+	margin-bottom: 26px;
+}
+form .account{
+	padding: 14px 18px;
+	border: 1px #ddd solid;
+	border-radius: 4px;
+}
+form .account .title{
+	font-size: 28px;
+	line-height: 1.2;
+	padding-bottom: 4px;
+	margin-bottom: 10px;
+}
+form .account label{
+	display: block;
+	padding-left: 2px;
+	padding-bottom: 2px;
+	font-weight: 700;
+}
+form .account .name{
+	width: 100%;
+	margin-bottom: 14px;
+}
+form .account .section{
+	margin-bottom: 14px;
+}
+form .account .section input{
+	display: block;
+	width: 100%;
+	margin-right: 0;
+	background: #fff;
+	height: 31px;
+	padding: 3px 7px;
+	box-sizing: border-box;
+	border-top-color: #949494;
+	border-radius: 3px;
+	outline: 0
+}
+form .account .section .normal{
+	box-shadow: 0 1px 0 rgba(255,255,255,0.5);
+	border:1px solid #a6a6a6;
+}
+form .account .section .normal:focus{
+	border-color: #e77600;
+	box-shadow: 0 0 3px 2px rgba(228,121,17,0.5);
+}
+form .account .section .error{
+	box-shadow:0 0 0 3px rgba(221,0,0,0.1) inset;
+	border:1px solid #d00;
+}
+form .account  #info{
+	margin-top: 6px;
+	color: #2b2b2b;
+	font-size: 12px;
+	line-height: 15px;
+}
+form .account  #info i{
+	display: inline-block;
+	height: 13px;
+	width: 14px;
+	margin-left: 2px;
+	margin-top: 2px;
+	vertical-align: top;
+	background: url(../images/ui.png) -166px -130px no-repeat;
+}
+form .account #info div{
+	display: inline-block;
+	vertical-align: top;
+}
+form .account button{
+	padding: 1px 6px;
+	width: 100%;
+	box-shadow: 0 1px 0 rgba(255,255,255,0.4) inset;
+	background: linear-gradient(to bottom, #f7dfa4,#f0c14b);
+	height:29px;
+	border:1px solid;
+	border-color: #a88734 #9c7e31 #846a29;
+	border-radius: 2px;
+	cursor: pointer;
+}
+form .account button:focus{
+	border-color:#e77600;
+	outline: 0;
+	box-shadow: 0 0 3px 2px rgba(228,121,17,0.5)
+}
+form .account .text{
+	font-size: 12px;
+	line-height: 1.5;
+	margin-top: 18px;
+	margin-bottom: 26px;
+	color: #111;
+	width: 100%;
+}
+a{
+	text-decoration: none;
+	color: #0066c0;
+}
+a:hover{
+	text-decoration: underline;
+	color: #c45500;
+}
+form .account .signIn{
+	font-size: 13px;
+	line-height: 19px;
+}
+form .account .signIn a:after{
+	display: inline-block;
+	background: url(../images/ui.png) -346px -86px no-repeat;
+	content: '';
+	width: 3px;
+	height: 6px;
+	padding-bottom: 3px;
+}
+form .account .signIn a:hover:after{
+	background-position: -346px -101px;
+}
+.divider{
+	height: 44px;
+	margin-bottom: -18px;
+	z-index: 0;
+	background: linear-gradient(to bottom,rgba(0,0,0,0.14),rgba(0,0,0,0.03) 3px, transparent);
+}
+.divider:after{
+	content: "";
+	display: block;
+	height: 44px;
+	width: 100%;
+	background: linear-gradient(to right,#fff,rgba(255,255,255,0),#fff);
+	z-index: 1;
+}
+#footer{
+	margin-top: 26px;
+}
+#footer .info{
+	margin: 0 auto 10px auto;
+	font-size: 11px;
+	line-height: 1.465;
+	text-align: center;
+}
+#footer .info .spacer{
+	width: 20px;
+	display: inline-block;
+}
+#footer .copyright{
+	color: #555;
+	font-size: 11px;
+	line-height: 1.465;
+	text-align: center;
+}
+.show{
+	margin-top: 3px;
+	padding-left: 16px;
+	color: #c40000;
+	position: relative;
+	display: block;
+}
+.show i{
+	height: 13px;
+	width: 14px;
+	position: absolute;
+	left: 2px;
+	top: 2px;
+	background: url(../images/ui.png) -141px -130px;
+	vertical-align: top;
+}
+.show span{
+	text-align: left;
+	font-size: 12px;
+	line-height: 15px;
+	vertical-align: top;
+}
+.errorInfo{
+	display: none;
+}
+
+form .account .needHelp a:before{
+	display: inline-block;
+	background: url(../images/ui.png) -366px -86px no-repeat;
+	content: '';
+	width: 7px;
+	height: 7px;
+	padding-bottom: 2px;
+}
+#register{
+	width: 350px;
+	margin: 0 auto;
+}
+#register .dividerBreak{
+	position: relative;
+	top: 2px;
+	padding-top: 1px;
+	margin: 0 auto 14px auto;
+	text-align: center;
+}
+#register .dividerBreak span{
+	text-align: center;
+	line-height: 1;
+	font-size: 12px;
+	color: #767676;
+	padding: 0 8px 0 7px;
+	position: relative;
+	background: #fff;
+	z-index: 2;
+}
+#register .dividerBreak:after{
+	content: '';
+	width: 100%;
+	background: transparent;
+	display: block;
+	height: 1px;
+	border-top: 1px solid #e7e7e7;
+	position: absolute;
+	top: 50%;
+	margin-top: -1px;
+	z-index: 1;
+}
+#register .aButton{
+	width: 100%;
+	margin: 0 auto;
+	
+}
+#register .aButton button{
+	background: linear-gradient(to bottom, #f7f8fa,#e7e9ec);
+	height: 29px;
+	width: 100%;
+	outline: none;
+	border: 1px solid;
+	border-radius: 3px;
+	border-color: #adb1b8 #a2a6ac #8d9096;
+	cursor: pointer;
+	box-shadow: 0 1px 0 rgba(255,255,255,.6) inset;
+}
+#register .aButton button:hover{
+	background: linear-gradient(to bottom, #e7eaf0,#d9dce1);
+	border-color: #a2a6ac #979aa1 #82858a;
+	text-decoration: underline;
+}
+#register .aButton button a{
+	color: #111;
+	width: 100%;
+	text-decoration: none;
+}
+
+

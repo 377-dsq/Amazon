@@ -1,0 +1,472 @@
+body{
+	background: #232f3e;
+	margin:0;
+	padding:0;
+	font-family: "Amazon Ember",'Amazon Ember Regular','Arial',sans-serif;
+}
+#head{
+	position: relative;
+	z-index: 198;
+}
+#head #navTop{
+	height: 58px;
+	position: relative;
+	min-width: 1100px;
+	z-index: 5;
+	background: #232f3e;
+}
+#head .navLeft{
+	position: relative;
+	float: left;
+	overflow: hidden;
+	width: 210px;
+	margin: 0;
+	padding:0;
+}
+#head .navRight{
+	display: inline-block;
+	float: right;
+	margin: 10px 3px 0px 10px;
+	font-size: 13px;
+}
+
+#head #navTop .navLeft .category{
+	border: 1px solid #666;
+	border-radius: 3px;
+	margin:12px 5px;
+	padding:5px 5px 3px 5px;
+	display: inline-block;
+	float: left;
+	cursor: pointer;
+}
+#head #navTop .navLeft .category:hover{
+	border: 1px solid #fff;
+}
+#head #navTop .navLeft #logo{
+	display: inline-block;
+	float: left;
+	width: 165px;
+	cursor: pointer;
+}
+#head #navTop .navLeft #logo img{
+	width: 100px;
+}
+#head #navTop .downward{
+	width: 8px;
+	margin-left: 3px;
+} 
+
+#head #navTop .navRight #language{
+	display: inline-block;
+	float: left;
+	margin: 0;
+	padding: 5px;
+	width: auto;
+	position: relative;
+	cursor: pointer;
+}
+#head #navTop .navRight #language .globalLanguage{
+	width: 12px;
+}
+#head #navTop .navRight #login{
+	display: inline-block;
+	float: left;
+	margin:0;
+	padding: 5px;
+	position: relative;
+	cursor: pointer;
+}
+#head #navTop .navRight .line1{
+	color: #ccc;
+	margin: 0;
+}
+#head #navTop .navRight .line2{
+	color: #fff;
+	margin: 0;
+	font-weight: bold;
+	display: inline-block;
+}
+#head #navTop .navRight #returns{
+	float: left;
+	display: inline-block;
+	margin:0;
+	padding: 5px;
+	overflow: hidden;
+	cursor: pointer;
+}
+#head #navTop .navRight #cart{
+	float: left;
+	position: relative;
+	display: inline-block;
+	padding:5px;
+	overflow: hidden;
+	cursor: pointer;
+}
+#head #navTop .navRight #cart img{
+	height: 27px;
+}
+#head #navTop .navRight #cart .cartNum{
+	color: #f08804;
+	position: absolute;
+	font-size: 16px;
+	font-weight: 700;
+	top: 2px;
+	margin: 0;
+	left: 55%;
+}				
+#head #navTop .navFill{
+	position: static;
+	overflow: visible;
+	display: block;
+	margin: 0px;
+	padding-top: 2px;
+} 
+#head #navTop .navFill .fillContainer{
+	position: relative;
+	width: auto;
+	overflow: hidden;
+	border-radius: 4px;
+	display: block;
+	margin-top: 10px;
+}
+
+
+#head #navTop .navFill .fillContainer .cate{   /*为allDepa和select设置一个外框，确保显示出来的部分会随着allDepa大小变化*/
+	font-size: 14px;                            /*cate要设置为relative，overflow为hidden，同时select为absolute，从文档流中跳出，然后大小也局限在cate部分*/
+	float: left;                                /*select的opacity为0，则它会隐藏在allDepa后面，但是点击会出现下拉框*/
+	position: relative;
+	overflow-x: hidden;
+	cursor: pointer;
+}
+#head #navTop .navFill .fillContainer .allDep{
+	height: 16px;
+	display: inline-block;
+	padding: 12px;
+	text-align: center;	
+	background: #f3f3f3;
+	color: #555;
+	border-right: 1px solid #ccc;
+}
+#head #navTop .navFill .fillContainer .cate:hover>.allDep{
+	background: #dadada;
+}
+#head #navTop .navFill .fillContainer .select{
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 40px;
+	opacity: 0;
+	cursor: pointer;
+}
+#head #navTop .navFill .fillContainer .select .first{
+	height: 100%;
+	border: none;
+	outline: none;
+	padding: 0;
+	margin: 0;
+	cursor: pointer;
+}
+#head #navTop .navFill .search{
+	float: right;
+	display: inline-block;
+	background: #febd69;
+	width: 46px;
+	height: 30px;
+	text-align: center;
+	padding: 10px 0 0 0;
+	cursor: pointer;
+}
+#head #navTop .navFill .search:hover{
+	background: #f3a847;
+}
+#head #navTop .navFill .search img{
+	width: 21px;
+}
+#head #navTop .navFill .searchContent{
+	border: none;
+	overflow: hidden;
+}
+#head #navTop .navFill .searchContent input{
+	width: 100%;
+	height: 38px;
+	border: none;
+	padding-left: 5px;
+}
+
+#head #navTop .navFill .searchContent input:focus{
+	outline: none;
+}
+#head #navBottom{
+	position: relative;
+	font-size: 13px;
+	min-width: 1100px;
+	padding-bottom:8px;
+	background: #232f3e;
+	z-index: 4;
+}
+#head .navLeft .hoverAddBorder{
+	height: 38px;
+	width: 100px;
+	color: #fff;
+	float: left;
+	position: relative;
+}
+
+#head #navBottom .navLeft .address{
+	width: 25px;
+	height: 25px;
+	background: url(../../images/index/address.svg) no-repeat 2px 2px;
+	float: left;
+	margin: 8px;
+	margin-right: 0;
+	display: inline-block;
+}
+#head #navBottom .navLeft .text{
+	display: inline-block;
+	float: left;
+	overflow: hidden;
+	margin-top: 3px;
+}
+#head #navBottom .navLeft .line1{
+	margin:0;
+}
+#head #navBottom .navLeft .line2{
+	font-weight: bold;
+	margin:0;
+}
+#head #navBottom .navFill{
+	position: static;
+	overflow: visible;
+}
+#head #navBottom .navFill .fillContainer{
+	position: relative;
+	overflow: hidden;
+}
+#head #navBottom .navFill .fillContainer a{
+	float: left;
+	color: #ccc;
+	text-decoration: none;
+	margin-top: 12px;
+	margin-right: 0px;
+	padding: 8px 5px;
+}
+#head .hoverAddBorder{
+	border: solid 1px #232f3e;
+}
+#head .hoverAddBorder:hover{
+	border:1px solid rgba(255,255,255,.2);
+	border-radius: 2px;
+}
+.flyout{
+	position: absolute;
+	z-index: 999;
+	display: none;
+	overflow: visible;
+	cursor: default;
+}
+
+.flyout .triangle{
+	width: 0;
+	height: 0;
+	border-left: 9px solid transparent;
+	border-right: 9px solid transparent;
+	border-bottom: 9px solid #fff;
+	margin-left: 30px;
+	position: absolute;
+	top: -8px;
+}
+.flyout .flyoutContent{
+	background: #fff;
+	border-radius: 4px;
+	padding: 15px;
+	margin: 0;
+	font-size: 13px;
+	border: 1px solid #bbb;
+}
+.forLanguage p{
+	padding-bottom: 7px;
+	margin: 0;
+}
+.forLanguage p a{
+	color: #0066c0;
+	text-decoration: none;
+	margin-left: 5px;
+}
+.forLanguage p a:hover{
+	text-decoration: underline;
+	color: #c45500;
+}
+.forLanguage .radioL div{
+	position: relative;
+	padding-bottom: 7px;
+	cursor: pointer;
+}
+.forLanguage .radioL a{
+	text-decoration: none;
+	color: #444;
+	display: block;
+	width: 100%;
+}
+.forLanguage div a:hover{
+	color: #c45500;
+	text-decoration: underline;
+}
+.forLanguage div input[type='radio']{
+	width: 15px;
+	height: 15px;
+	opacity: 0;
+}
+.forLanguage div label{
+	position: absolute;
+	width: 15px;
+	height: 15px;
+	border: 1px solid #444;
+	border-radius: 50%;
+	left: 0px;
+	top: 5px;
+}
+.forLanguage div input[type='radio']:checked +label:after{
+	content: '';
+	position: absolute;
+	width: 5px;
+	height: 5px;
+	top: 4px;
+	left: 4px;
+	border: 1px solid #c45500;
+	border-radius: 50%;
+	background-color: #c45500;
+}
+.forLanguage div a:hover label:after{
+	content: '';
+	position: absolute;
+	width: 5px;
+	height: 5px;
+	top: 4px;
+	left: 4px;
+	border: 1px solid #e69a30;
+	border-radius: 50%;
+	background-color: #e69a30;
+}
+.forLanguage div a:hover label{
+	border-radius: 50%;
+	border: 1px solid #888;
+}
+.forLanguage .flyoutContent .line{
+	height: 1px;
+	line-height: 1px;
+	padding-bottom: 0;
+	margin:6px 0 9px 24px;
+	background: #eee;
+}
+.forLanguage .flyoutContent .right{
+	float: right;
+}
+
+
+#language:hover .forLanguage{
+	left: -11px;
+	top: 38px;
+	width: 240px;
+	font-size: 13px;
+	line-height: 16px;
+	color: #444;
+	display: block;
+} 
+.forLogin .triangle{
+	margin-left: 405px;
+}
+.flyout .flyoutContent .button{
+	padding: 0 110px;
+	text-align: center;
+	border-bottom: 1px solid #eee;
+	margin-bottom: 16px;
+}
+.flyout .flyoutContent .button a{
+	text-decoration: none;
+}
+.flyout .flyoutContent .button input{
+	display: block;
+	color: #111;
+	height: 33px;
+	width: 100%;
+	outline: none;
+	border:1px solid;
+	border-color: #c89411 #b0820f #99710d #b0820f;
+	border-radius: 3px;
+	box-shadow: inset 0 1px 0 0 #fcf3dc ;
+	text-align: center;
+	line-height: 30px;
+	font-size: 13px;
+	background-image: linear-gradient(to top, #f8e3ad,#EEBA37);
+	cursor: pointer;
+}
+.flyout .flyoutContent .button input:hover{
+	background-image: linear-gradient(to top,#f6da95,#ecb21f);
+}
+.flyout .flyoutContent .button p{
+	color: #333;
+	margin: 7px 0 9px 0;
+	font-size: 11px;
+}
+.flyout .flyoutContent .button p a, .flyout .flyoutContent .button p a:visited{
+	text-decoration: none;
+	color: #05a;
+}
+.flyout .flyoutContent .button p a:hover,.flyout .flyoutContent .button p a:focus,.flyout .flyoutContent .button p a:active{
+	color: #e47911;
+}
+.flyout .flyoutContent .column{
+	display: inline-block;
+	width: 200px;
+	vertical-align: top;
+}
+.flyout .flyoutContent .left{
+	padding-right: 20px;
+	padding-left: 10px;
+}
+.flyout .flyoutContent .right{
+	padding-left: 20px;
+	padding-right: 10px;
+	border-left: 1px solid #eee;
+}
+.flyout .flyoutContent .column .title{
+	font-size: 16px;
+	font-weight: 700px;
+	padding-bottom: 10px;
+	margin: 0;
+}
+.flyout .flyoutContent .column a{
+	display: block;
+	width: 100%;
+	padding-bottom: 7px;
+	font-size: 13px;
+	line-height: 16px;
+	text-decoration: none;
+	color: #444;
+}
+.flyout .flyoutContent .column a:hover{
+	color: #c45500;
+	border:none;
+	outline: none;
+	text-decoration: underline;
+}
+
+#head #navTop .navRight #login:hover .forLogin{
+	display: block;
+	width: 500px;
+	left: -300px;
+	top: 38px;
+}
+
+#head #cover{
+	position: fixed;
+	left: 0;
+	top: 0px;
+	bottom: 0;
+	width: 100%;
+	height: 100%;
+	background: #000;
+	opacity: 0.6;
+	display: none;
+	z-index: 1;
+}

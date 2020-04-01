@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Amazon Sign-In</title>
+	<link rel="icon" type="image/x-icon" href="images/favicon.ico">
+	<link rel="short icon" type="image/x-o=icon" href="images/favicon.ico">
+	<link rel="stylesheet" type="text/css" href="styles/signIn.css">
+</head>
+<body>
+	<div id="logo"><a href="index.html"></a></div>
+	<div id='errorMessage' class="hidden"><i></i><h4></h4><span></span></div>
+	<form method="post" action="signInWhenPass.html">
+		<div class="account">
+			<div class="title">Sign-In</div>
+			<div class="section">
+				<label for="email">Email (phone for mobile accounts)</label>
+				<input type="text" name="email" id="email" class="normal" autofocus="autofocus">
+				<div class="errorInfo showWhenVoid">
+					<i></i>
+					<span>Enter your email or mobile phone number</span>
+				</div>
+			</div>
+			<button>Continue</button>
+			<div class="text">By continuing, you agree to Amazon's <a href="">Conditions of Use</a> and <a href="">Privacy Notice</a></div>
+			<div class="needHelp">
+				<div><a href="">Need help?</a></div>
+			</div>
+		</div>	
+	</form>
+	<div id="register">
+		<div class="dividerBreak"><span>New to Amazon?</span></div>
+		<div class="aButton"><a href="register.html"><button>Create your Amazon account</button></div>
+	</div>
+	<div id="footer">
+		<div class="divider"></div>
+		<div class="info"><span class="spacer"></span><a href="">Condition of Use</a><span class="spacer"></span><a href="">Privacy Notice</a><span class="spacer"></span><a href="">Help</a><span class="spacer"></span></div>
+		<div class="copyright">© 1996-2019, Amazon.com, Inc. or its affiliates </div>
+	</div>
+	<script type="text/javascript" src="javascripts/public.js"></script>
+	<script type="text/javascript" src="javascripts/signIn.js"></script>
+</body>
+</html>

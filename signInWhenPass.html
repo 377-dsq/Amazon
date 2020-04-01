@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Amazon Sign-In</title>
+	<link rel="icon" type="image/x-icon" href="images/favicon.ico">
+	<link rel="short icon" type="image/x-o=icon" href="images/favicon.ico">
+	<link rel="stylesheet" type="text/css" href="styles/signIn.css">
+</head>
+<body>
+	<div id="logo"><a href="index.html"></a></div>
+	<div id='errorMessage' class="hidden"><i></i><h4></h4><span></span></div>
+	<form method="post" action="signInWhenPass.html">
+		<div class="account">
+			<div class="title">Sign-In</div>
+			<div class="yourAccount"><span>270836973@qq.com </span><a href="signin.html">Change</a></div>
+			<div class="section">
+				<label for="password" class="inlineblock">Password</label><a href="" class="right">Forgot your password?</a>
+				<input type="password" name="email" id="password" class="normal" autofocus="autofocus">
+				<div class="errorInfo showWhenVoid">
+					<i></i>
+					<span>Enter your password</span>
+				</div>
+			</div>
+			<button>Sign-In</button>
+			<div class="text">
+				<input type="checkbox" id="keepSignIn" name=""><label for='keepSignIn'>Keep me signed in.</label>
+				<a>Details <i></i></a>
+			</div>
+		</div>	
+	</form>
+	<div id="details" class="hidden">
+		<div class="container">
+			<div class="title"><span>"Keep Me Signed In" Checkbox</span><div class="close"><i></i></div></div>
+			<div class="content">
+			<p>Chooseing "Keep me signed in" reduces the number of times you're asked to Sign-In on this site</p>
+			<p>To keep your account secure, use this option only on your personal devices.</p>
+			</div>
+			<div class="arrow-border topArrowBorder"><div class="arrow topArrow"></div></div>
+			</div>
+		
+	</div>
+	<div id="footer">
+		<div class="divider"></div>
+		<div class="info"><span class="spacer"></span><a href="">Condition of Use</a><span class="spacer"></span><a href="">Privacy Notice</a><span class="spacer"></span><a href="">Help</a><span class="spacer"></span></div>
+		<div class="copyright">© 1996-2019, Amazon.com, Inc. or its affiliates </div>
+	</div>
+	<script type="text/javascript" src="javascripts/public.js"></script>
+	<script type="text/javascript" src="javascripts/signIn.js"></script>
+	<script type="text/javascript" src="javascripts/signInWhenPass.js"></script>
+</body>
+</html>

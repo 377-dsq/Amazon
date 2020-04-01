@@ -1,0 +1,77 @@
+body{
+	margin: 30px 0;
+	padding: 0;
+	color: #4d4d4d;
+	font-family: Arial,Helvetica,Verdana,sans-serif;
+}
+#head{
+	text-align: center;
+}
+#head img{
+	width: 120px;
+}
+#info{
+	border:1px solid #bbd3de;
+	background: #f6f6f6 url(../images/robotCheck/info.svg) 5% 15% no-repeat;
+	width:350px;
+	margin: 5px auto;
+}
+#info .infoText{
+	margin: 15px;
+	margin-left: 55px;
+	
+}
+#info .infoText h4{
+	font-weight: 400;
+	line-height: 1.25em;
+	margin: 0;
+}
+#info .infoText p{
+	margin: 5px 0;
+	font-size: 13px;
+}
+
+#verifyInfo{
+	background-color: #f6f6f6;
+	border:1px solid #bbd3de;
+	width: 350px;
+	margin: 20px auto;
+}
+#verifyInfo .verifytext{
+	background: white;
+	margin: 15px;
+}
+#verifyInfo .verifytext p{
+	line-height: 1.25em;
+	padding: 15px;
+	padding-bottom: 5px;
+	margin: 0;
+}
+#verifyInfo .verifytext #verifyCode{
+	margin:5px auto;
+	text-align: center;
+	font-size: 35px;
+	font-family: 'Comic sans MS',cursive;
+	letter-spacing: 0.5em;
+	vertical-align: middle;
+
+}
+#verifyInfo .verifytext a{
+	display: block;
+	font-size: 12px;
+	font-style: italic;
+	text-align: right;
+	margin:5px;
+	cursor: pointer;
+	color: blue;
+}
+#verifyInfo .verifytext a:hover{
+	color: orange;
+}
+#verifyInfo .center{
+	padding:10px 0;
+	text-align: center;
+}
+
+
+

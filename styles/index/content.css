@@ -1,0 +1,604 @@
+#content{
+	width: 100%;
+	min-width: 1100px;
+	background:#EAEDED;
+}
+#content #banner{
+	width: 100%;
+	max-width: 1500px;
+	min-width: 1100PX;
+	margin: 0 auto;
+	font-size: 0;
+	z-index: 99;
+	white-space: nowrap;
+}
+#content #banner .bannerContainer{
+	max-height: 230px;
+	height: 300px;
+	position: relative;
+	margin-bottom: 0;
+	overflow:visible;
+	padding: 0;
+	z-index: 0
+}
+#content #banner .bannerContainer .bannerContainer1{
+	position: relative;
+	width: 100%;
+	padding: 0;
+	overflow-x: hidden;
+}
+
+#content #banner ul{
+	width: 400%;
+	margin:0;
+	list-style: none;
+	padding: 0;
+}
+#content #banner  ul:before{
+	content: "";
+	position: absolute;
+	top: 250px;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	z-index: 1;
+	background: linear-gradient(-180deg, rgba(234,237,237,0), #EAEDED);
+}
+#content #banner  ul li{
+	display: none;
+	width: 25%;
+	margin: 0;
+	padding: 0;
+	min-height: 100%;
+	list-style: none;
+}
+#content #banner  ul .first{
+	display: inline-block;
+}
+#content #banner  ul li a{
+	text-align: center;
+	display: inline-block;
+	position: relative;
+	left: 50%;
+	transform: translateX(-50%);
+	transition: all .25s ease-in-out;
+}
+#content #banner  ul li a img{
+	min-width: 100%;
+	min-height: 100%;
+}
+#content #banner .bannerContainer .left{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 80px;
+	height: 300px;
+	cursor: pointer;
+	z-index: 10;
+}
+#content #banner .bannerContainer .right{
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 80px;
+	height: 300px;
+	cursor: pointer;
+	z-index: 10;
+}
+#content #banner .bannerContainer .icon{
+	width: 34px;
+	height: 52px;
+	background-image: url(../../images/index/content/left-right.png);
+	background-size: 68px 52px;
+	position: relative;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%,-50%);
+}
+#content #banner .bannerContainer .left .icon{
+	background-position: 0 0;
+}
+#content #banner .bannerContainer .right .icon{
+	background-position: 34px 0;
+}
+#content #pageContent{
+	position: relative;
+	max-width: 1500px;
+	font-size: 13px;
+	line-height: 19px;
+	margin: 0 auto;
+	padding: 0 10px;
+}
+#content #pageContent #bannerStripe{
+	margin-top: 20px;
+	padding: 0 10px;
+}
+#content #pageContent #bannerStripe div{
+	padding: 10px 14px;
+	margin: 0;
+	background: #f5f6f6;
+	color: #444;
+	text-align: center;
+}
+#content #pageContent a,#content #pageContent a:visited,#content #pageContent a:active{
+	color: #0066c0;
+	text-decoration: none;
+	margin-left: 15px;
+}
+#content #pageContent a:hover{
+	color: #c45500;
+	text-decoration: underline;
+
+}
+#content #pageContent #mainContent{
+	padding: 0 10px;
+	margin-top:30px;
+
+}
+#content #pageContent #mainContent #desktop{
+	padding: 10px 20px;
+	background: #fff;
+}
+#content #pageContent #mainContent .pageTitle{
+	margin-top: 10px;
+}
+#content #pageContent #mainContent .pageTitle span{
+	font-size: 21px;
+	line-height: 1.5em;
+	text-overflow: ellipsis;
+	color: #444;
+}
+#content #pageContent #mainContent #desktop .desktopcontent{
+	width: 100%;
+	position: relative;
+	overflow: hidden;
+	min-height: 220px;
+	white-space: nowrap;
+	margin: 0 auto;
+}
+#content #pageContent #mainContent #desktop .desktopcontent ul{
+	list-style: none;
+	font-size: 0;
+	position: absolute;
+	overflow: visible;
+	display: inline-block;
+	left: 0;
+	top: 0;
+	padding: 0;
+	margin: 0;
+	margin-bottom: 14px;
+	transition: all .5s ease-in-out;
+}
+#content #pageContent #mainContent #desktop .desktopcontent ul li{
+	display: inline-block;
+	position: relative;
+	min-width: 145px;
+	max-width: 270px;
+	max-height: 200px;
+	overflow: hidden;
+	text-align: center;
+	margin-right: 10px;
+	cursor: pointer;
+}
+#content #pageContent #mainContent .moveLeft{
+	position: absolute;
+	left: 0;
+	top: 55px;
+	height: 100px;
+	width: 45px;
+	border-radius: 0 3px 3px 0;
+	box-shadow: 0 1px 3px #888;
+	cursor: pointer;
+	background: #fff;
+}
+#content #pageContent #mainContent .moveLeft div{
+	width: 13px;
+	height: 22px;
+	background-image: url(../../images/index/content/desktopIcon.png);
+	background-position: -14px 0;
+	position: relative;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%,-50%);
+}
+#content #pageContent #mainContent .moveRight{
+	position: absolute;
+	right: 0;
+	top: 55px;
+	height: 100px;
+	width: 45px;
+	border-radius: 0 0 3px 3px;
+	box-shadow: 0 1px 3px #888;
+	background: #fff;
+	cursor: pointer;
+}
+#content #pageContent #mainContent .moveRight div{
+	width: 13px;
+	height: 22px;
+	background-image: url(../../images/index/content/desktopIcon.png);
+	background-position: 0 0;
+	position: relative;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%,-50%);
+}
+#content #pageContent #mainContent .scrollBar{
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	height: 6px;
+	width: 100%;
+}
+#content #pageContent #mainContent .scrollBar .bar{
+	border:1px solid #eee;
+	background: #aaa;
+	border-radius: 4px;
+	cursor: pointer;
+	height: 6px;
+	opacity: 0;
+	margin-top: -2px;
+	margin-left: 0;
+	transition: all 0.5s ease-in-out;
+}
+
+#content #pageContent #mainContent .section{
+	padding: 10px 20px;
+	background: #fff;
+	margin-top: 20px;
+}
+#content #pageContent #mainContent .sectionContent{
+	position: relative;
+	overflow: hidden;
+	width: 100%;
+	min-height: 220px;
+	white-space: nowrap;
+	margin: 0 auto;
+}
+#content #pageContent #mainContent .sectionContent ul{
+	position: absolute;
+	display: inline-block;
+	overflow: visible;
+	list-style: none;
+	top: 0;
+	left: 0;
+	font-size: 0;
+	padding: 0;
+	margin: 0;
+	margin-bottom: 14px;
+	transition: all 0.5s ease-in-out;
+}
+#content #pageContent #mainContent .sectionContent ul li{
+	display: inline-block;
+	position: relative;
+	overflow: hidden;
+	text-align: center;
+	vertical-align: top;
+	min-width: 145px;
+	max-width: 270px;
+	height: 200px;
+	margin-right: 10px;
+	cursor: pointer;	
+}
+#mainContent .sectionContent ul li img{
+	max-height: 200px;
+	max-width: 270px;
+}
+#mainContent .sectionContent ul li .quickLook{
+	position: absolute;
+	width: 95%;
+	left: 0;
+	right: 0;
+	bottom: 7px;
+	margin:auto;
+	padding: 0;
+	max-width: 180px;
+	background: linear-gradient(to bottom,#f7f8fa,#e7e9ec);
+	border:1px solid ;
+	border-color: #ADB1B8 #A2A6AC #8D9096 #A2A6AC;
+	border-radius: 3px;
+}
+#mainContent .sectionContent ul li .quickLook span{
+	display: block;
+	padding: 0 10px;
+	text-align: center;
+	font-size: 13px;
+	white-space: nowrap;
+	line-height: 29px;
+	color: #111;
+	cursor: pointer;
+}
+#mainContent .sectionContent ul li .quickLook:hover{
+	background: linear-gradient(to bottom,#e7eaf0,#d9dce1);
+	border-color: #a2a6ac #979aa1 #82858a #979aa1;
+}
+
+#mainContent .sectionContent .moveLeft{
+	opacity: 0;
+	transition: opacity 0.25s ease-in-out;
+}
+#mainContent .sectionContent .moveRight{
+	opacity: 0;
+	transition: opacity 0.25s ease-in-out;
+}
+#content  #contentBottom{
+	margin: 0 auto;
+	margin-top: 30px;
+	width: 100%;
+	min-width: 940px;
+	background: #fff;
+	padding: 20px 0;
+}
+#content #contentBottom .text {
+	border:1px solid #ddd;
+	border-radius: 5px;
+	margin-top: 20px;
+	padding: 0 20px;
+	position: relative;
+}
+
+#content #contentBottom .text .title{
+	font-size: 20px;
+	line-height: 21px;
+	color: #444;
+	padding: 10px 10px 3px 10px;
+	margin:0;
+	white-space: nowrap;
+}
+#content  #contentBottom .text .backtohistory{
+	padding: 0 10px 15px 10px;
+	position: relative;
+	height: 75px;
+
+}
+#content  #contentBottom .text .linkContainer{
+	display: block;
+	float: right;
+	margin-top: 15px;
+	padding-left: 40px;
+	padding-right: 10px;
+}
+#content  #contentBottom .text .backtohistory .linkContainer a{
+	display: inline-block;
+	width: 80px;
+	font-size: 10px;
+	font-weight: 700;
+	line-height: 11px;
+	vertical-align: top;
+	text-decoration: none;
+	color: #0066c0;
+	outline: none;
+	cursor: pointer;
+}
+#content  #contentBottom .text .backtohistory .linkContainer a:hover{
+	color: #c45500;
+	outline: none;
+}
+#content  #contentBottom .text .backtohistory .linkContainer a:focus{
+	outline: 5px auto;
+	outline-offset: -2px;
+}
+#content  #contentBottom .text .backtohistory .linkContainer span{
+	font-weight: 700;
+	font-size: 11px;
+	color: #c90;
+	margin-right: 8px;
+	margin-top: -2px;
+	line-height: 8px;
+	vertical-align: top;
+
+}
+#content  #contentBottom .text .backtohistory span{
+	line-height: 75px;
+	color: #000;
+	font-size: 13px;
+	font-style: italic;
+}
+#footer{
+	min-width: 1100px;
+}
+#footer #backToTop{
+	width: 100%;
+	background: #37475a;
+	margin-bottom: 40px;
+	min-width: 1100px;
+}
+#footer #backToTop:hover, #footer #backToTop:focus{
+	background: #485769;
+}
+#footer #backToTop a{
+	text-decoration: none;
+	color: #fff;
+	display: block;
+	text-align: center;
+	width: 100%;
+	padding: 15px 0;
+	font-size: 13px;
+	line-height: 19px;
+}
+#footer #accessibility {
+	display: table;
+	margin: 0 auto;
+	max-width: 1000px;
+}
+
+#footer #accessibility .verticalCol{
+	display: table-cell;
+	color: #fff;
+	padding: 0 10px;
+	line-height: 120%;
+}
+#footer #accessibility .verticalCol .title{
+	font-size: 16px;
+	font-weight: 700;
+	margin:6px 0 14px 0;
+	white-space: nowrap;
+}
+#footer #accessibility .verticalCol ul{
+	padding: 0;
+	margin: 0;
+	font-size: 13px;
+	line-height: 120%;
+}
+#footer #accessibility .verticalCol ul li{
+	list-style: none;
+	margin-bottom: 10px;
+}
+#footer #accessibility .verticalCol li a{
+	color: #ddd;
+	text-decoration: none;
+}
+#footer #accessibility .verticalCol li a:hover,#footer a:active{
+	text-decoration: underline;
+}
+#footer #accessibility .innerSpace{
+	display: table-cell;
+	width: 10%;
+	padding: 0 10px;
+}
+#footer .innerLine{
+	margin-top: 40px;
+	border: 1px solid #3a4553;
+}
+#footer #PadItem{
+	margin:  10px auto;
+	text-align: center;
+	max-width: 1000px;
+	color: #767676;
+	line-height: 18px;
+}
+#footer #PadItem .logo{
+	background: url(../../images/icon.png) -10px -90px;
+	display: inline-block;
+	width: 76px;
+	height: 23px;
+	margin-top: 30px;
+	margin-bottom: 15px;
+	padding: 0 0.6em;
+}
+#footer #PadItem .container{
+	display: inline-block;
+	margin-left: 70px;
+	margin-top: 18px;
+	padding: 0 0.6em;
+	text-align: center;
+	vertical-align: top;
+} 
+#footer #PadItem .container .item{
+	display: inline-block;
+	height: 21px;
+	vertical-align: top;
+	border:1px solid #848688;
+	border-radius: 3px;
+	padding: 6px 18px 6px 8px;
+	font-size: 13px;
+	margin-right: 4px;
+	text-align: center;
+	text-decoration:none;
+	color: #ccc;
+}
+#footer #PadItem .container .item .globalImg{
+	display: inline-block;
+	background: url(../../images/global.png) -77px -24px;
+	position: relative;
+	top:2px;
+	width: 15px;
+	height: 15px;
+}
+#footer #PadItem .container .item .text{
+	display: inline-block;
+	padding: 0 0.6em;
+	margin: 0;
+	vertical-align: top;
+}
+#footer #PadItem .container .item .arrow{
+	display: inline-block;
+	position: relative;
+	background: url(../../images/global.png) -77px -80px;
+	height: 12px;
+	left: 12px;
+	padding: 0 0.6em;
+}
+#footer #PadItem .container .item .currency{
+	display: inline-block;
+	color: #fff;
+	padding: 0;
+	margin: 0;
+}
+#footer #PadItem .container .item .flag{
+	display: inline-block;
+	position: relative;
+	background: url(../../images/global.png) -54px -108px;
+	height: 12px;
+	padding: 0 0.6em;
+	margin: 3px 0 0;
+}
+#footer #PadItem .container .forLanguage{
+	text-align: left;
+}
+#footer #PadItem .container .language{
+	display: inline-block;
+}
+#footer #PadItem .container .language:hover .forLanguage{
+	width: 240px;
+	font-size: 13px;
+	line-height: 16px;
+	color: #444;
+	display: block;
+}
+#footer #navigation{
+	font-size: 12px;
+	background: #131a22;
+	padding: 30px 0;
+	margin: 30px 0 0;
+	color: #767676;
+}
+#footer #navigation table{
+	max-width: 1000px;
+	margin: 0 auto;
+	width: 100%;
+	border-collapse: collapse;
+}
+#footer #navigation table .items{
+	font-size: 11px;
+	padding: 0 0.75em;
+	vertical-align: top;
+	text-align: left;
+	line-height: 115%;
+}
+#footer #navigation table td a{
+	color: #ddd;
+	text-decoration: none;
+}
+#footer #navigation a:hover, #footer #navigation a:active{
+	text-decoration: underline;
+}
+#footer #navigation table td a .text{
+	color: #999;
+	font-size: 10px;
+	line-height: 110%;
+}
+#footer #navigation table .verticalspace{
+	width: 4%;
+	padding: 0 10px;
+	vertical-align: top;
+}
+#footer #navigation table .spaceline{
+	height: 16px;
+}
+#footer #copyright{
+	font-size: 12px;
+	max-width: 100%;
+	background: #131a22;
+	padding: 10px 0 30px;
+	text-align: center;
+	color: #767676;
+	line-height: 18px;
+}
+#footer #copyright a{
+	color: #ddd;
+	text-decoration: none;
+	padding: 0 0.6em;
+}
+#footer #copyright a:hover,#footer #copyright a:active{
+	text-decoration: underline;
+}
